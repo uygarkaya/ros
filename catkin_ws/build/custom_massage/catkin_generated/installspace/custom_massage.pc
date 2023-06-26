@@ -1,0 +1,8 @@
+prefix=/home/uygarkaya/ros/catkin_ws/install
+
+Name: custom_massage
+Description: Description of custom_massage
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

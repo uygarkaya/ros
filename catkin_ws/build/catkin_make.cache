@@ -1,2 +1,2 @@
-
+custom_massage:hello
 -DCATKIN_DEVEL_PREFIX=/home/uygarkaya/ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/uygarkaya/ros/catkin_ws/install -G Unix Makefiles

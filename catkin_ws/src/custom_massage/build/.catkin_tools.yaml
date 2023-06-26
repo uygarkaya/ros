@@ -1,0 +1,6 @@
+devel_space: /home/uygarkaya/ros/catkin_ws/src/custom_massage/devel
+install: false
+install_space: /home/uygarkaya/ros/catkin_ws/src/custom_massage/install
+profile: default
+source_space: /home/uygarkaya/ros/catkin_ws/src/custom_massage/src
+workspace: /home/uygarkaya/ros/catkin_ws/src/custom_massage

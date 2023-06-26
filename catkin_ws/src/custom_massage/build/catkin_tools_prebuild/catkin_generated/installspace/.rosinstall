@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/uygarkaya/ros/catkin_ws/src/custom_massage/install/setup.sh

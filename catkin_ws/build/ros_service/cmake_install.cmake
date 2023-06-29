@@ -92,3 +92,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ros_service" TYPE PROGRAM FILES "/home/uygarkaya/ros/catkin_ws/build/ros_service/catkin_generated/installspace/server.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ros_service" TYPE PROGRAM FILES "/home/uygarkaya/ros/catkin_ws/build/ros_service/catkin_generated/installspace/client.py")
+endif()
+

@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="custom_massage" type="publisher.py" name="publisher_node" output="screen" />
+    <node pkg="custom_massage" type="subscriber.py" name="subscriber_node" output="screen" />
+</launch>

@@ -33,6 +33,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/uygarkaya/ros/catkin_ws/src/hello/package.xml"
   "/home/uygarkaya/ros/catkin_ws/src/ros_service/CMakeLists.txt"
   "/home/uygarkaya/ros/catkin_ws/src/ros_service/package.xml"
+  "/home/uygarkaya/ros/catkin_ws/src/ros_service/src/client.py"
   "/home/uygarkaya/ros/catkin_ws/src/ros_service/src/server.py"
   "/opt/ros/melodic/share/catkin/cmake/../package.xml"
   "/opt/ros/melodic/share/catkin/cmake/all.cmake"

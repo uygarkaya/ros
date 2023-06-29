@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("custom_massage")
 subdirs("hello")
+subdirs("ros_service")

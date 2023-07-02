@@ -134,6 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/uygarkaya/ros/catkin_ws/build/custom_massage/cmake_install.cmake")
   include("/home/uygarkaya/ros/catkin_ws/build/hello/cmake_install.cmake")
   include("/home/uygarkaya/ros/catkin_ws/build/ros_service/cmake_install.cmake")
+  include("/home/uygarkaya/ros/catkin_ws/build/vision/cmake_install.cmake")
 
 endif()
 

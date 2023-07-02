@@ -33,7 +33,6 @@ class Clinet():
                 print('Service Call Faild: %s', exc)
 
 
-
 if __name__ == '__main__':
     try:
         rospy.init_node('client_node')

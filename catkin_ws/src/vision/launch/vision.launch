@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="vision" type="publisher.py" name="image_publisher" output="screen" />
+</launch>

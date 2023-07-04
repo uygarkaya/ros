@@ -2,4 +2,7 @@
     <node pkg="vision" type="publisher.py" name="image_publisher" output="screen">
         <param name="path" value="$(find vision)/data/multilane.mp4" />
     </node>
+    <node pkg="vision" type="publisher.py" name="image_publisher_" output="screen">
+        <param name="path" value="$(find vision)/data/lane.mp4" />
+    </node>
 </launch>

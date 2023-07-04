@@ -6,6 +6,7 @@ from cv_bridge import CvBridge, CvBridgeError
 
 bridge = CvBridge()
 pTime = 0
+VIDEO_PATH = rospy.get_param('/image_publisher/path')
 
 def publish_image():
     global pTime
@@ -15,13 +16,13 @@ def publish_image():
 
     publisher = rospy.Publisher('vision/image', Image, queue_size=1)
     rate = rospy.Rate(30)
-    cap = cv2.VideoCapture('../data/multilane.mp4')
+    cap = cv2.VideoCapture(VIDEO_PATH)
 
     while not rospy.is_shutdown():
         success, img = cap.read()
         if not success:
             cap.release()
-            cap = cv2.VideoCapture('../data/multilane.mp4')
+            cap = cv2.VideoCapture(VIDEO_PATH)
             continue
         
         cTime = time.time()

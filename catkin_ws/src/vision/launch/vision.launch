@@ -1,3 +1,5 @@
 <launch>
-    <node pkg="vision" type="publisher.py" name="image_publisher" output="screen" />
+    <node pkg="vision" type="publisher.py" name="image_publisher" output="screen">
+        <param name="path" value="$(find vision)/data/multilane.mp4" />
+    </node>
 </launch>

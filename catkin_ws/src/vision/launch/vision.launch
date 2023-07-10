@@ -1,8 +1,18 @@
+<!-- <launch>
+    <group ns="namespace1">
+        <node pkg="vision" type="publisher.py" name="image_publisher" output="screen">
+            <param name="path" value="$(find vision)/data/multilane.mp4" />
+        </node>
+    </group>
+    <group ns="namespace2">
+        <node pkg="vision" type="publisher.py" name="image_publisher" output="screen">
+            <param name="path" value="$(find vision)/data/lane.mp4" />
+        </node>
+    </group>
+</launch> -->
 <launch>
     <node pkg="vision" type="publisher.py" name="image_publisher" output="screen">
-        <param name="path" value="$(find vision)/data/multilane.mp4" />
-    </node>
-    <node pkg="vision" type="publisher.py" name="image_publisher_" output="screen">
-        <param name="path" value="$(find vision)/data/lane.mp4" />
+        <param name="path1" value="$(find vision)/data/multilane.mp4" />
+        <param name="path2" value="$(find vision)/data/lane.mp4" />
     </node>
 </launch>

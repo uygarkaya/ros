@@ -385,6 +385,21 @@ message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
 //Value Computed by CMake
+mobileye_560_660_msgs_BINARY_DIR:STATIC=/home/uygarkaya/ros/catkin_ws/build/mobileye_560_660_msgs
+
+//Value Computed by CMake
+mobileye_560_660_msgs_SOURCE_DIR:STATIC=/home/uygarkaya/ros/catkin_ws/src/mobileye_560_660_msgs
+
+//Value Computed by CMake
+msgs_1515_BINARY_DIR:STATIC=/home/uygarkaya/ros/catkin_ws/build/msgs_1515
+
+//Value Computed by CMake
+msgs_1515_SOURCE_DIR:STATIC=/home/uygarkaya/ros/catkin_ws/src/msgs_1515
+
+//The directory containing a CMake configuration file for ros_environment.
+ros_environment_DIR:PATH=/opt/ros/melodic/share/ros_environment/cmake
+
+//Value Computed by CMake
 ros_service_BINARY_DIR:STATIC=/home/uygarkaya/ros/catkin_ws/build/ros_service
 
 //Value Computed by CMake
@@ -527,7 +542,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -5,7 +5,6 @@ from cv_bridge import CvBridge, CvBridgeError
 
 bridge = CvBridge()
 pTime = 0
-counter = 0
 
 def publish_image(path, topic="vision/image"):
     global pTime, counter
@@ -16,15 +15,11 @@ def publish_image(path, topic="vision/image"):
 
     while not rospy.is_shutdown():
         success, img = cap.read()
-        # rospy.loginfo("{} - {} detected...".format(counter, topic))
-        # counter = counter + 1
         if not success:
-            rospy.loginfo("{} - {} detected...".format(counter, topic))
-            counter = counter + 1
-            cap.release()
-            cap = cv2.VideoCapture(path)
-            continue
-            # break
+            # cap.release()
+            # cap = cv2.VideoCapture(path)
+            # continue
+            break
         
         cTime = time.time()
         fps = 1/(cTime-pTime)
@@ -34,7 +29,7 @@ def publish_image(path, topic="vision/image"):
 
         image_msg = bridge.cv2_to_imgmsg(img, "bgr8")
         publisher.publish(image_msg)
-        log(topic=topic, msg=image_msg) # log the image msg
+        rospy.loginfo("Topic: {} - MSG:{}".format(topic, image_msg))
 
         rate.sleep()
 
@@ -61,11 +56,9 @@ def non_parallel_run():
 
 
 def log(topic, msg):
-    try:
-        with open('/logs/msg.txt', 'w') as file_:
-            file_.write("Topic: {} - MSG:{}".format(topic, msg))
-    except FileNotFoundError:
-        print("The 'logs' directory does not exist")
+    with open('../logs/msg.txt', 'w') as file_:
+        file_.write("Topic: {} - MSG:{}".format(topic, msg))
+
 
 
 if __name__ == '__main__':

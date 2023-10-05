@@ -39,26 +39,15 @@ def publish_image(path, topic="vision/image"):
         if rospy.is_shutdown():
             cap.release()
 
-def parallel_run():    
-    process1 = multiprocessing.Process(target=publish_image, args=(rospy.get_param('/image_publisher/path1'), 'vision/image1',))
-    process2 = multiprocessing.Process(target=publish_image, args=(rospy.get_param('/image_publisher/path2'), 'vision/image2',))
-    
-    process1.start()
-    process2.start()
-
-    process1.join()
-    process2.join()
-
-def non_parallel_run():
+def run():
     publish_image(path=rospy.get_param('/image_publisher/path1'))
     rospy.loginfo('vision/image1 topic was published, now vision/image2 start to publish...')
-    publish_image(path=rospy.get_param('/image_publisher/path2'))
+    # publish_image(path=rospy.get_param('/image_publisher/path2'))
 
 
 def log(topic, msg):
     with open('../logs/msg.txt', 'w') as file_:
         file_.write("Topic: {} - MSG:{}".format(topic, msg))
-
 
 
 if __name__ == '__main__':
@@ -68,8 +57,7 @@ if __name__ == '__main__':
         rospy.init_node('vision_node')
         rospy.loginfo('publisher node has been started...')
         
-        parallel_run()
-        # non_parallel_run()
+        run()
 
         end_time = time.time()
         rospy.loginfo("Execution Time: {}".format(end_time-start_time))

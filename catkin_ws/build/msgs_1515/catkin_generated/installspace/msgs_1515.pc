@@ -1,0 +1,8 @@
+prefix=/home/uygarkaya/ros/catkin_ws/install
+
+Name: msgs_1515
+Description: Description of msgs_1515
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/uygarkaya/ros/catkin_ws/devel
+
+Name: msgs_1515
+Description: Description of msgs_1515
+Version: 0.0.0
+Cflags: -I/home/uygarkaya/ros/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

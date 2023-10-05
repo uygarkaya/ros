@@ -1,0 +1,6 @@
+(cl:in-package msgs_1515-msg)
+(cl:export '(OBSTACLE_KINEMATICS-VAL
+          OBSTACLE_KINEMATICS
+          OBSTACLE_PROPERTIES-VAL
+          OBSTACLE_PROPERTIES
+))
